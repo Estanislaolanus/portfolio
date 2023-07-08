@@ -1,0 +1,151 @@
+/* GLOBAL SETTINGS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+.special-color {
+    color: #e80e65;
+}
+/* NAVBAR */
+
+.navbar {
+    position:fixed;
+    top: 0;
+    background: #fff;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1.3rem;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 1.3rem;
+}
+
+.navbar li {
+    text-decoration: none;
+}
+
+.navbar a {
+    color: #000;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    display: inline-block;
+    position: relative;
+}
+
+
+.navbar > ul > li > a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    border-radius: 15px;
+    transform: scaleX(0);
+    margin-bottom: -4px;
+    height: 2.4px;
+    bottom: 0;
+    left: 0;
+    background-color: #e80e65;
+    transform-origin: bottom left;
+    transition: transform 0.2s ease-out;
+}
+
+.navbar > ul > li > a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.contact-btn {
+    padding: 10px;
+    border: none;
+    background: #e80e65;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all .2s;
+}
+.contact-btn a{
+    color: #fff;
+}
+.contact-btn:hover {
+    background: #f50264;
+    z-index: 1;
+}
+/* PROFILE DESCRIPTION */
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 80%;
+    width: 38rem;
+    margin: 5rem auto 3rem auto;
+    gap: 3rem;
+}
+
+.profile-info {
+    display: flex;
+    gap: 2rem;
+}
+.profile-info h1{
+    font-size: 2.5rem;
+}
+
+.profile-text {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    gap: 1rem;
+}
+.profile-skills{
+    max-width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.3rem;
+}
+.profile-skills h3{
+    width: fit-content;
+    font-size: 1.5rem;
+    border-bottom: 2.4px solid #e80e65;
+}
+
+.tech-stack {
+    display: flex;
+    justify-content: center;
+    gap: 1.3rem;
+    flex-wrap: wrap;
+}
+.tech-stack img {
+    width: 2.3rem;
+}
+/* ABOUT */
+.about {
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.about h3{
+    width: fit-content;
+    font-size: 2rem;
+    border-bottom: 3px solid #e80e65;
+}
+.about-text {
+    width: 40%;
+}
+/* PROJECTS */
+/* CONTACT */
