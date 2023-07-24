@@ -3,8 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=\, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./scripts/script.js" defer></script>
+    
+    <script src="
+https://cdn.jsdelivr.net/npm/kute.js@2.2.4/dist/kute.min.js
+"></script>
 </head>
 <body>
     <header>
@@ -21,48 +26,140 @@
                 </li>
             </ul>
             <button class="contact-btn">
-                <a href="#contact">Contact</a>
+                <a href="#contact">Contact Me</a>
             </button>
         </nav>
     </header>
     <main class="profile" id="home">
+        <svg id="visual" class="blob" viewBox="0 0 900 600" width="900" height="600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+            <g transform="translate(464.42213896418014 306.9384505887057)"><path id="blob1" d="M105.4 -117C140 -70.7 174 -35.4 179.2 5.2C184.4 45.7 160.8 91.5 126.1 136.6C91.5 181.8 45.7 226.4 -3.9 230.3C-53.5 234.2 -107 197.3 -142.5 152.2C-178 107 -195.5 53.5 -204.1 -8.6C-212.7 -70.7 -212.4 -141.4 -176.9 -187.8C-141.4 -234.1 -70.7 -256 -17.7 -238.4C35.4 -220.7 70.7 -163.4 105.4 -117" fill="#fdd0e2"></path></g>
+            <g style="visibility: hidden;" transform="translate(412.30028208445424 255.92855683794966)"><path id="blob2" d="M170.5 -146C233 -108 304 -54 300.9 -3.1C297.8 47.8 220.7 95.7 158.2 155.9C95.7 216 47.8 288.5 -1.4 289.9C-50.7 291.3 -101.4 221.7 -145.9 161.5C-190.4 101.4 -228.7 50.7 -225.4 3.2C-222.2 -44.2 -177.4 -88.4 -132.9 -126.4C-88.4 -164.4 -44.2 -196.2 4.9 -201.1C54 -206 108 -184 170.5 -146" fill="#fdd0e2"></path></g>
+        </svg>
         <div class="profile-info">
             <div class="profile-text">
                 <h1 class="profile-title">
                     Full <span class="special-color">Stack</span> Developer
                 </h1>
                 <p>
-                    I'm a junior software developer from Cordoba Argentina
+                    I'm a hardworking junior software developer from Cordoba, Argentina.
                 </p>
             </div>
             <div>
                 <img src="https://placekitten.com/200/200" alt="profile">
             </div>
         </div>
-        <div class="profile-skills">
+        <div class="profile-skills hidden">
             <h3>
                 Tech stack
             </h3>
-            <div class="tech-stack">
-                <div><img src="./assets/images/techLogos/html-logo.png" alt=""></div>
-                <div><img src="./assets/images/techLogos/css-logo.svg.png" alt=""></div>
-                <div><img src="./assets/images/techLogos/javascript-logo.png" alt=""></div>
-                <div><img src="./assets/images/techLogos/mongodb-logo.png" alt=""></div>
-                <div><img src="./assets/images/techLogos/postgresql-logo.svg.png" alt=""></div>
-                <div><img src="./assets/images/techLogos/express-logo.png" alt=""></div>
-                <div><img src="./assets/images/techLogos/react-logo.svg.png" alt=""></div>
-                <div><img src="./assets/images/techLogos/node-js-logo.png" alt=""></div>
+            <div class="tech-stack" id="tech-stack">
+                <div class="tech-logo-container">
+                    <img src="./assets/images/techLogos/html-logo.png" alt="">
+                    <div class="tech-logo-info">Html</div>
+                </div>
+                <div class="tech-logo-container">
+                    <img src="./assets/images/techLogos/css-logo.svg.png" alt="">
+                    <div class="tech-logo-info">Css</div>
+                </div>
+                <div class="tech-logo-container">
+                    <img src="./assets/images/techLogos/javascript-logo.png" alt="">
+                    <div class="tech-logo-info">Javascript</div>
+                </div>
+                <div class="tech-logo-container">
+                    <img src="./assets/images/techLogos/mongodb-logo.png" alt="">
+                    <div class="tech-logo-info">Mongo DB</div>
+                </div>
+                <div class="tech-logo-container">
+                    <img src="./assets/images/techLogos/postgresql-logo.svg.png" alt="">
+                    <div class="tech-logo-info">Postgresql</div>
+                </div>
+                <div class="tech-logo-container">
+                    <img src="./assets/images/techLogos/express-logo.png" alt="">
+                    <div class="tech-logo-info">Express</div>
+                </div>
+                <div class="tech-logo-container">
+                    <img src="./assets/images/techLogos/react-logo.svg.png" alt="">
+                    <div class="tech-logo-info">React</div>
+                </div>
+                <div class="tech-logo-container">
+                    <img src="./assets/images/techLogos/node-js-logo.png" alt="">
+                    <div class="tech-logo-info">Node Js</div>
+                </div>
             </div>
         </div>
     </main>
-    <section class="about" id="about">
+    <section class="about reverse-animation hidden" id="about">
         <h3>About Me</h3>
         <div class="about-text">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet perspiciatis quod, voluptatem magni doloremque adipisci deleniti fuga doloribus veritatis nisi facilis, quis tenetur. Quaerat culpa suscipit nulla cumque odit molestias!
+        </div>
     </section>
     <section class="projects" id="projects">
+        <!-- <h3>Projects</h3> -->
+        <div class="project">
+            <div class="project-container hidden">
+                <div class="project-info">
+                    <h4>Budget app</h4>
+                    <p>
+                        Designed to help you take control of your finances. With this app, you can easily track your income, expenses, and savings all in one place. The app provides a user-friendly interface that simplifies the budgeting process, making it accessible to users of all levels of financial expertise.
+                    </p>
+                    <div class="project-techs">
+                        <div><img src="./assets/images/techLogos/mongodb-logo.png" alt=""></div>
+                        <div><img src="./assets/images/techLogos/express-logo.png" alt=""></div>
+                        <div><img src="./assets/images/techLogos/react-logo.svg.png" alt=""></div>
+                        <div><img src="./assets/images/techLogos/node-js-logo.png" alt=""></div>
+                    </div>
+                    <div class="project-info-links">
+                        <a href="https://github.com/lao7272/budget-app/tree/main" target="_blank">
+                            Code <img src="./assets/images/techLogos/github-logo.png" alt="">
+                        </a>
+                        <a href="https://my-budget-management-app.netlify.app/" target="_blank">
+                            Visit website! &#128279;
+                        </a>
+                    </div>
+                    
 
+                </div>
+                <div class="project-img">
+                    <a href="https://my-budget-management-app.netlify.app/" target="_blank" >
+                        <img src="./assets/images/websites/budget-app.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="project">
+            <div class="project-container reverse reverse-animation hidden">
+                <div class="project-info">
+                    <h4>Chess Game</h4>
+                    <p>
+                        A entertaining chess game where you can play with your friends and offline.
+                    </p>
+                    <div class="project-techs">
+                        <div><img src="./assets/images/techLogos/postgresql-logo.svg.png" alt=""></div>
+                        <div><img src="./assets/images/techLogos/express-logo.png" alt=""></div>
+                        <div><img src="./assets/images/techLogos/react-logo.svg.png" alt=""></div>
+                        <div><img src="./assets/images/techLogos/node-js-logo.png" alt=""></div>
+                    </div>
+                    <div class="project-info-links">
+                        <a href="https://github.com/lao7272/chess-app" target="_blank">
+                            Code <img src="./assets/images/techLogos/github-logo.png" alt="">
+                        </a>
+                        <a href="https://my-budget-management-app.netlify.app/" target="_blank">
+                            Visit website! &#128279;
+                        </a>
+                    </div>
+                    
+
+                </div>
+                <div class="project-img">
+                    <a href="https://my-budget-management-app.netlify.app/" target="_blank">
+                        <img src="./assets/images/websites/chess2.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
     </section>
-    <section class="contact" id="contact"></section>
+    <section class="contact" id="contact">
+    </section>
 </body>
 </html>
