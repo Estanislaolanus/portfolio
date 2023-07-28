@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=\, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="./css/style.css">
     <script src="./scripts/script.js" defer></script>
-    
-    <script src="
-https://cdn.jsdelivr.net/npm/kute.js@2.2.4/dist/kute.min.js
-"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/kute.js@2.2.4/dist/kute.min.js"></script>
 </head>
+
 <body>
     <header>
-        <nav class="navbar">
+        <nav id="navbar" class="navbar bg-1">
             <ul>
                 <li>
-                    <a href="#home">Home</a>
+                    <a class="underline" href="#home">Home</a>
                 </li>
                 <li>
-                    <a href="#about">About</a>
+                    <a class="underline" href="#about">About</a>
                 </li>
                 <li>
-                    <a href="#projects">Projects</a>
+                    <a class="underline" href="#projects">Projects</a>
                 </li>
             </ul>
             <button class="contact-btn">
@@ -31,9 +31,18 @@ https://cdn.jsdelivr.net/npm/kute.js@2.2.4/dist/kute.min.js
         </nav>
     </header>
     <main class="profile" id="home">
-        <svg id="visual" class="blob" viewBox="0 0 900 600" width="900" height="600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-            <g transform="translate(464.42213896418014 306.9384505887057)"><path id="blob1" d="M105.4 -117C140 -70.7 174 -35.4 179.2 5.2C184.4 45.7 160.8 91.5 126.1 136.6C91.5 181.8 45.7 226.4 -3.9 230.3C-53.5 234.2 -107 197.3 -142.5 152.2C-178 107 -195.5 53.5 -204.1 -8.6C-212.7 -70.7 -212.4 -141.4 -176.9 -187.8C-141.4 -234.1 -70.7 -256 -17.7 -238.4C35.4 -220.7 70.7 -163.4 105.4 -117" fill="#fdd0e2"></path></g>
-            <g style="visibility: hidden;" transform="translate(412.30028208445424 255.92855683794966)"><path id="blob2" d="M170.5 -146C233 -108 304 -54 300.9 -3.1C297.8 47.8 220.7 95.7 158.2 155.9C95.7 216 47.8 288.5 -1.4 289.9C-50.7 291.3 -101.4 221.7 -145.9 161.5C-190.4 101.4 -228.7 50.7 -225.4 3.2C-222.2 -44.2 -177.4 -88.4 -132.9 -126.4C-88.4 -164.4 -44.2 -196.2 4.9 -201.1C54 -206 108 -184 170.5 -146" fill="#fdd0e2"></path></g>
+        <svg id="visual" class="blob" viewBox="0 60 1500 700" width="1200" height="600" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+            <g transform="translate(464.42213896418014 306.9384505887057)">
+                <path class="blob1"
+                    d="M105.4 -117C140 -70.7 174 -35.4 179.2 5.2C184.4 45.7 160.8 91.5 126.1 136.6C91.5 181.8 45.7 226.4 -3.9 230.3C-53.5 234.2 -107 197.3 -142.5 152.2C-178 107 -195.5 53.5 -204.1 -8.6C-212.7 -70.7 -212.4 -141.4 -176.9 -187.8C-141.4 -234.1 -70.7 -256 -17.7 -238.4C35.4 -220.7 70.7 -163.4 105.4 -117"
+                    fill="#fdd0e2"></path>
+            </g>
+            <g style="visibility: hidden;" transform="translate(412.30028208445424 255.92855683794966)">
+                <path class="blob2"
+                    d="M170.5 -146C233 -108 304 -54 300.9 -3.1C297.8 47.8 220.7 95.7 158.2 155.9C95.7 216 47.8 288.5 -1.4 289.9C-50.7 291.3 -101.4 221.7 -145.9 161.5C-190.4 101.4 -228.7 50.7 -225.4 3.2C-222.2 -44.2 -177.4 -88.4 -132.9 -126.4C-88.4 -164.4 -44.2 -196.2 4.9 -201.1C54 -206 108 -184 170.5 -146"
+                    fill="#fdd0e2"></path>
+            </g>
         </svg>
         <div class="profile-info">
             <div class="profile-text">
@@ -41,125 +50,157 @@ https://cdn.jsdelivr.net/npm/kute.js@2.2.4/dist/kute.min.js
                     Full <span class="special-color">Stack</span> Developer
                 </h1>
                 <p>
-                    I'm a hardworking junior software developer from Cordoba, Argentina.
+                    Hi, my name is Estanislao. I'm a hardworking junior software developer from Cordoba, Argentina.
                 </p>
             </div>
-            <div>
-                <img src="https://placekitten.com/200/200" alt="profile">
-            </div>
-        </div>
-        <div class="profile-skills hidden">
-            <h3>
-                Tech stack
-            </h3>
-            <div class="tech-stack" id="tech-stack">
-                <div class="tech-logo-container">
-                    <img src="./assets/images/techLogos/html-logo.png" alt="">
-                    <div class="tech-logo-info">Html</div>
-                </div>
-                <div class="tech-logo-container">
-                    <img src="./assets/images/techLogos/css-logo.svg.png" alt="">
-                    <div class="tech-logo-info">Css</div>
-                </div>
-                <div class="tech-logo-container">
-                    <img src="./assets/images/techLogos/javascript-logo.png" alt="">
-                    <div class="tech-logo-info">Javascript</div>
-                </div>
-                <div class="tech-logo-container">
-                    <img src="./assets/images/techLogos/mongodb-logo.png" alt="">
-                    <div class="tech-logo-info">Mongo DB</div>
-                </div>
-                <div class="tech-logo-container">
-                    <img src="./assets/images/techLogos/postgresql-logo.svg.png" alt="">
-                    <div class="tech-logo-info">Postgresql</div>
-                </div>
-                <div class="tech-logo-container">
-                    <img src="./assets/images/techLogos/express-logo.png" alt="">
-                    <div class="tech-logo-info">Express</div>
-                </div>
-                <div class="tech-logo-container">
-                    <img src="./assets/images/techLogos/react-logo.svg.png" alt="">
-                    <div class="tech-logo-info">React</div>
-                </div>
-                <div class="tech-logo-container">
-                    <img src="./assets/images/techLogos/node-js-logo.png" alt="">
-                    <div class="tech-logo-info">Node Js</div>
-                </div>
+            <div class="profile-img">
+                <img src="./assets/images/profile/profile1.JPG" alt="profile">
             </div>
         </div>
     </main>
-    <section class="about reverse-animation hidden" id="about">
+    
+    <section class="about" id="about">
+        <svg id="visual" class="blob" viewBox="0 0 1000 600" width="900" height="700" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+            <g transform="translate(419.0833286491628 326.6600410300631)"><path class="blob1" d="M109.5 -198.3C145.3 -168.9 180 -146.5 209.9 -114.6C239.8 -82.7 264.9 -41.3 250.8 -8.2C236.6 25 183.3 50 159.7 92.9C136.1 135.7 142.3 196.5 120.7 212.3C99 228.1 49.5 199.1 7.7 185.8C-34.2 172.5 -68.3 175 -96.5 162.9C-124.6 150.9 -146.7 124.2 -164.7 94.6C-182.6 65 -196.3 32.5 -192.3 2.3C-188.2 -27.8 -166.4 -55.7 -153.1 -93.2C-139.8 -130.7 -134.9 -177.9 -110.8 -214C-86.7 -250.1 -43.3 -275.1 -3.3 -269.4C36.8 -263.8 73.7 -227.6 109.5 -198.3" fill="#ef337e"></path></g> 
+            <g style="visibility: hidden;" transform="translate(457.59606308480465 309.78350675217604)"><path class="blob2" d="M105.3 -204.1C127 -169.9 128.4 -122.5 146.7 -86.2C164.9 -50 200 -25 219.6 11.3C239.2 47.7 243.5 95.3 220.4 123.2C197.3 151 146.9 159.1 105.6 178.8C64.3 198.4 32.2 229.7 -1.2 231.7C-34.5 233.8 -69 206.5 -112.3 188C-155.6 169.5 -207.7 159.8 -232.6 129.9C-257.5 100 -255.3 50 -238.8 9.5C-222.4 -31 -191.7 -62 -164.5 -87.8C-137.2 -113.7 -113.4 -134.3 -86.5 -165.5C-59.7 -196.7 -29.8 -238.3 6 -248.7C41.8 -259.1 83.7 -238.2 105.3 -204.1" fill="#ef337e"></path></g>
+        </svg>
         <h3>About Me</h3>
-        <div class="about-text">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet perspiciatis quod, voluptatem magni doloremque adipisci deleniti fuga doloribus veritatis nisi facilis, quis tenetur. Quaerat culpa suscipit nulla cumque odit molestias!
+        <div class="about-container">
+            <img src="./assets/images/profile/about-me.jpg" alt="">
+            <div class="about-text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet perspiciatis quod, voluptatem magni
+                doloremque adipisci deleniti fuga doloribus veritatis nisi facilis, quis tenetur. Quaerat culpa suscipit
+                nulla cumque odit molestias!
+            </div>
+        </div>
+    </section>
+    <section class="profile-skills">
+        <h3>
+            Tech stack
+        </h3>
+        <div class="tech-stack" id="tech-stack">
+            <div class="tech-logo-container">
+                <div class="tech-img"><img src="./assets/images/techLogos/html-logo.png" alt=""></div>
+                <div class="tech-logo-info">Html</div>
+            </div>
+            <div class="tech-logo-container">
+                <div class="tech-img"><img src="./assets/images/techLogos/css-logo.svg.png" alt=""></div>
+                <div class="tech-logo-info">Css</div>
+            </div>
+            <div class="tech-logo-container">
+                <div class="tech-img"><img src="./assets/images/techLogos/javascript-logo.png" alt=""></div>
+                <div class="tech-logo-info">Javascript</div>
+            </div>
+            <div class="tech-logo-container">
+                <div class="tech-img"><img src="./assets/images/techLogos/mongodb-logo.png" alt=""></div>
+                <div class="tech-logo-info">Mongo DB</div>
+            </div>
+            <div class="tech-logo-container">
+                <div class="tech-img"><img src="./assets/images/techLogos/postgresql-logo.svg.png" alt=""></div>
+                <div class="tech-logo-info">Postgresql</div>
+            </div>
+            <div class="tech-logo-container">
+                <div class="tech-img"><img src="./assets/images/techLogos/express-logo.png" alt=""> </div>
+                <div class="tech-logo-info">Express</div>
+            </div>
+            <div class="tech-logo-container">
+                <div class="tech-img"><img src="./assets/images/techLogos/react-logo.png" alt=""></div>
+                <div class="tech-logo-info">React</div>
+            </div>
+            <div class="tech-logo-container">
+                <div class="tech-img"><img src="./assets/images/techLogos/node-js-logo.png" alt=""></div>
+                <div class="tech-logo-info">Node Js</div>
+            </div>
         </div>
     </section>
     <section class="projects" id="projects">
-        <!-- <h3>Projects</h3> -->
-        <div class="project">
-            <div class="project-container hidden">
-                <div class="project-info">
-                    <h4>Budget app</h4>
-                    <p>
-                        Designed to help you take control of your finances. With this app, you can easily track your income, expenses, and savings all in one place. The app provides a user-friendly interface that simplifies the budgeting process, making it accessible to users of all levels of financial expertise.
-                    </p>
-                    <div class="project-techs">
-                        <div><img src="./assets/images/techLogos/mongodb-logo.png" alt=""></div>
-                        <div><img src="./assets/images/techLogos/express-logo.png" alt=""></div>
-                        <div><img src="./assets/images/techLogos/react-logo.svg.png" alt=""></div>
-                        <div><img src="./assets/images/techLogos/node-js-logo.png" alt=""></div>
-                    </div>
-                    <div class="project-info-links">
-                        <a href="https://github.com/lao7272/budget-app/tree/main" target="_blank">
-                            Code <img src="./assets/images/techLogos/github-logo.png" alt="">
-                        </a>
-                        <a href="https://my-budget-management-app.netlify.app/" target="_blank">
-                            Visit website! &#128279;
-                        </a>
-                    </div>
-                    
-
+        <div class="project-container hidden">
+            <div class="project-info">
+                <h4>Budget app</h4>
+                <p>
+                    Designed to help you take control of your finances. With this app, you can easily track your income,
+                    expenses, and savings all in one place. The app provides a user-friendly interface that simplifies
+                    the budgeting process, making it accessible to users of all levels of financial expertise.
+                </p>
+                <div class="project-techs">
+                    <div><img src="./assets/images/techLogos/mongodb-logo.png" alt=""></div>
+                    <div><img src="./assets/images/techLogos/express-logo.png" alt=""></div>
+                    <div><img src="./assets/images/techLogos/react-logo.png" alt=""></div>
+                    <div><img src="./assets/images/techLogos/node-js-logo.png" alt=""></div>
                 </div>
-                <div class="project-img">
-                    <a href="https://my-budget-management-app.netlify.app/" target="_blank" >
-                        <img src="./assets/images/websites/budget-app.png" alt="">
+                <div class="project-info-links">
+                    <a href="https://github.com/lao7272/budget-app/tree/main" target="_blank">
+                        Code <img src="./assets/images/techLogos/github-logo.png" alt="">
+                    </a>
+                    <a href="https://my-budget-management-app.netlify.app/" target="_blank">
+                        Visit demo! &#128279;
                     </a>
                 </div>
             </div>
+            <div class="project-img">
+                <a href="https://my-budget-management-app.netlify.app/" target="_blank">
+                    <img src="./assets/images/websites/budget-app.png" alt="">
+                </a>
+            </div>
         </div>
-        <div class="project">
-            <div class="project-container reverse reverse-animation hidden">
-                <div class="project-info">
-                    <h4>Chess Game</h4>
-                    <p>
-                        A entertaining chess game where you can play with your friends and offline.
-                    </p>
-                    <div class="project-techs">
-                        <div><img src="./assets/images/techLogos/postgresql-logo.svg.png" alt=""></div>
-                        <div><img src="./assets/images/techLogos/express-logo.png" alt=""></div>
-                        <div><img src="./assets/images/techLogos/react-logo.svg.png" alt=""></div>
-                        <div><img src="./assets/images/techLogos/node-js-logo.png" alt=""></div>
-                    </div>
-                    <div class="project-info-links">
-                        <a href="https://github.com/lao7272/chess-app" target="_blank">
-                            Code <img src="./assets/images/techLogos/github-logo.png" alt="">
-                        </a>
-                        <a href="https://my-budget-management-app.netlify.app/" target="_blank">
-                            Visit website! &#128279;
-                        </a>
-                    </div>
-                    
-
+        <div class="project-container reverse reverse-animation hidden">
+            <div class="project-info">
+                <h4>Chess Game</h4>
+                <p>
+                    An entertaining chess game where you can play with your friends and offline.
+                </p>
+                <div class="project-techs">
+                    <div><img src="./assets/images/techLogos/postgresql-logo.svg.png" alt=""></div>
+                    <div><img src="./assets/images/techLogos/express-logo.png" alt=""></div>
+                    <div><img src="./assets/images/techLogos/react-logo.png" alt=""></div>
+                    <div><img src="./assets/images/techLogos/node-js-logo.png" alt=""></div>
                 </div>
-                <div class="project-img">
+                <div class="project-info-links">
+                    <a href="https://github.com/lao7272/chess-app" target="_blank">
+                        Code <img src="./assets/images/techLogos/github-logo.png" alt="">
+                    </a>
                     <a href="https://my-budget-management-app.netlify.app/" target="_blank">
-                        <img src="./assets/images/websites/chess2.png" alt="">
+                        Visit demo! &#128279;
                     </a>
                 </div>
+            </div>
+            <div class="project-img">
+                <a href="https://my-budget-management-app.netlify.app/" target="_blank">
+                    <img src="./assets/images/websites/chess2.png" alt="">
+                </a>
             </div>
         </div>
     </section>
-    <section class="contact" id="contact">
+    <section id="contact" class="contact">
+        <h3>Contact</h3>
+        <p>estanislaolanus@gmail.com</p>
+    </section>
+    <section class="footer">
+        <ul>
+            <li>
+                <a href="https://ar.linkedin.com/in/estanislao-lanus" target="_blank">
+                    <img src="./assets/images/techLogos/linkedin-logo.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/lao7272" target="_blank">
+                    <img src="./assets/images/techLogos/github-logo.png" alt="">
+                </a>
+            </li>
+            <li>
+                <img src="" alt="">
+            </li>
+        </ul>
     </section>
 </body>
+
 </html>
+
+<!-- <svg id="visual" class="blob" viewBox="0 0 1500 600" width="900" height="600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                <g transform="translate(419.0833286491628 326.6600410300631)"><path class="blob1" d="M109.5 -198.3C145.3 -168.9 180 -146.5 209.9 -114.6C239.8 -82.7 264.9 -41.3 250.8 -8.2C236.6 25 183.3 50 159.7 92.9C136.1 135.7 142.3 196.5 120.7 212.3C99 228.1 49.5 199.1 7.7 185.8C-34.2 172.5 -68.3 175 -96.5 162.9C-124.6 150.9 -146.7 124.2 -164.7 94.6C-182.6 65 -196.3 32.5 -192.3 2.3C-188.2 -27.8 -166.4 -55.7 -153.1 -93.2C-139.8 -130.7 -134.9 -177.9 -110.8 -214C-86.7 -250.1 -43.3 -275.1 -3.3 -269.4C36.8 -263.8 73.7 -227.6 109.5 -198.3" fill="#fdd0e2"></path></g>
+                <g style="visibility: hidden;" transform="translate(457.59606308480465 309.78350675217604)"><path class="blob2" d="M105.3 -204.1C127 -169.9 128.4 -122.5 146.7 -86.2C164.9 -50 200 -25 219.6 11.3C239.2 47.7 243.5 95.3 220.4 123.2C197.3 151 146.9 159.1 105.6 178.8C64.3 198.4 32.2 229.7 -1.2 231.7C-34.5 233.8 -69 206.5 -112.3 188C-155.6 169.5 -207.7 159.8 -232.6 129.9C-257.5 100 -255.3 50 -238.8 9.5C-222.4 -31 -191.7 -62 -164.5 -87.8C-137.2 -113.7 -113.4 -134.3 -86.5 -165.5C-59.7 -196.7 -29.8 -238.3 6 -248.7C41.8 -259.1 83.7 -238.2 105.3 -204.1" fill="#fdd0e2"></path></g>
+            </svg> -->
+<!-- <svg id="visual" class="blob" viewBox="0 0 10 600" width="2000" height="300" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                <g transform="translate(478.622803714871 285.7060512645148)"><path class="blob1" d="M143.6 -201.4C169.5 -178.7 162.8 -114.7 158.3 -66.2C153.8 -17.6 151.5 15.5 148.6 55.6C145.6 95.7 141.9 142.9 117 176.8C92.1 210.7 46 231.4 -4.9 238.1C-55.8 244.9 -111.7 237.7 -135.9 203.6C-160.2 169.5 -152.8 108.4 -169.8 55.4C-186.7 2.4 -227.9 -42.5 -218.4 -70.6C-208.8 -98.8 -148.5 -110.1 -103.6 -126.6C-58.8 -143.2 -29.4 -165.1 14.7 -185.3C58.8 -205.6 117.6 -224.1 143.6 -201.4" fill="#fdd0e2"></path></g>
+                <g style="visibility: hidden;" transform="translate(426.49542620153136 279.586963860957)"><path class="blob2" d="M161.5 -204.7C205.4 -190.3 234.4 -138 250.2 -82.8C266 -27.7 268.5 30.2 239.3 64.7C210.1 99.2 149.1 110.3 104 142.1C58.8 173.9 29.4 226.5 -12.4 243.6C-54.3 260.7 -108.5 242.4 -133.6 204C-158.6 165.7 -154.5 107.2 -169.8 56.1C-185.1 4.9 -220 -38.9 -214.1 -73.4C-208.1 -107.8 -161.4 -132.8 -118.9 -147.6C-76.4 -162.5 -38.2 -167.3 10.3 -181.4C58.8 -195.6 117.6 -219.1 161.5 -204.7" fill="#fdd0e2"></path></g>
+            </svg> -->

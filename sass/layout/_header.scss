@@ -1,0 +1,84 @@
+header {
+    position: sticky;
+    top: 0;
+    z-index: 99;
+
+    .navbar {
+        padding: 1rem;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 1.3rem;
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 1.3rem;
+
+            li {
+                text-decoration: none;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 600;
+            display: inline-block;
+            position: relative;
+        }
+
+        .contact-btn {
+            padding: 10px;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: all $transition;
+        }
+    }
+}
+.bg-1{
+        background: $color-2;
+        transition: .5s;
+        a {
+            color: #000;
+        }
+
+        .contact-btn {
+            background: $color-1;
+            transition: all $transition;
+
+            a {
+                color: $color-2;
+            }
+
+            &:hover {
+                background: #f50264;
+            }
+        }
+        .underline::after{
+            background-color: $color-1;
+        }
+}
+.bg-2{
+    background: $color-1;
+    transition: all .5s;
+    a {
+        color: $color-2;
+    }
+
+    .contact-btn {
+        background: $color-2;
+        transition: all $transition;
+
+        a {
+            color: #000;
+        }
+
+        &:hover {
+            background: #f3efc7;
+        }
+    }
+    .underline::after{
+        background-color: $color-2;
+    }
+}

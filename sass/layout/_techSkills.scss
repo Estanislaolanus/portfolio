@@ -1,0 +1,66 @@
+.profile-skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 7rem;
+    h3 {
+        width: fit-content;
+        font-size: $subtitle;
+        border-bottom: 2.4px solid $color-1;
+    }
+
+    .tech-stack {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+        .tech-logo-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            position: relative;
+            height: 5rem;
+            .tech-img {
+                background: #00000019;
+                display: flex;
+                height: 3.5rem;
+                width: 3.5rem;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                z-index: 1;
+        
+                img {
+                    user-select: none;
+                    width: 2.3rem;
+                }
+            }
+            .tech-logo-info {
+                color: #636363;
+                font-weight: 600;
+                margin-top: 5px;
+                width: max-content;
+                transition: all 0.3s;
+                position: absolute;
+                bottom: 0;
+                opacity: 0;
+                user-select: none;
+                z-index: 0;
+                transform: translateY(-1.2rem);
+            }
+            
+        }
+    }    
+}
+
+.tech-logo-container>.tech-img:hover+.tech-logo-info {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.tech-logo-container>.tech-img:focus+.tech-logo-info {
+    transform: translateY(0);
+    opacity: 1;
+}

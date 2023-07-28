@@ -1,0 +1,64 @@
+.underline::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    border-radius: 15px;
+    transform: scaleX(0);
+    margin-bottom: -4px;
+    height: 2.4px;
+    bottom: 0;
+    left: 0;
+    transform-origin: bottom left;
+    transition: transform $transition ease-out;
+}
+.underline:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.blob{
+    position: absolute;
+    z-index: -1;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1.2s ease-in-out;
+}
+.reverse-animation{
+    transform: translateX(100%);
+} 
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.profile-title {
+    position: relative;
+    font-size: $title;
+    letter-spacing: .5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    width: fit-content;
+    animation: typing 2s steps(18), 
+    blink .5s step-end 11 alternate;
+    box-shadow: none;
+}
+
+
+@keyframes blink {
+    50% {
+        box-shadow: .25rem 0 0 #000;
+    }
+}
+@keyframes typing {
+    from {
+        width: 0%;
+    } 
+    to {
+        width: 100%;
+    }
+}

@@ -1,0 +1,42 @@
+
+.profile {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 2rem;
+    margin-bottom: 7rem;
+    .profile-info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+    .profile-text {
+        width: fit-content;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        font-size: $text;
+        gap: 1rem;
+        p{
+            width: 60%;
+        }
+    }
+    .profile-img{
+        width: 15rem;
+        img{
+            border-radius: 50%;
+            width: 100%;
+            border: .2rem solid #2323233b;
+        }
+    }
+    .profile-skills {
+        max-width: 95%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.3rem;
+    }
+}

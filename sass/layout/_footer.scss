@@ -1,0 +1,24 @@
+.footer {
+    height: 40vh;
+    background: $color-1;
+    display: grid;
+    place-content: center;
+    ul {
+        li{
+            display: inline-block;
+            list-style: none;
+            
+            cursor: pointer;
+            a {
+                background: $color-2;
+                border-radius: 50%;
+                padding: .5rem;
+                display: grid;
+                place-content: center;
+                img{
+                    width: 1.4rem;
+                }
+            }
+        }
+    }
+}
