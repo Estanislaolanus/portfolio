@@ -1,6 +1,7 @@
 const hiddenElements = document.querySelectorAll(".hidden");
 const about = document.querySelector(".about");
 
+// Blob animation
 const tween = KUTE.allFromTo(
     '.blob1',
     {path: ".blob1"},
@@ -16,6 +17,7 @@ const observer = new IntersectionObserver(entries => {
     });
 });
 
+// Adaptable header
 document.addEventListener("scroll", () => {
         const navbar = document.querySelector("#navbar");
         const navbarRect = navbar.getBoundingClientRect();

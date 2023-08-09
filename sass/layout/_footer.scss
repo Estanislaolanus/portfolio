@@ -1,22 +1,43 @@
+@use "../abstracts" as *;
 .footer {
+    padding: 1.3rem;
     height: 40vh;
     background: $color-1;
-    display: grid;
-    place-content: center;
-    ul {
-        li{
-            display: inline-block;
-            list-style: none;
-            
-            cursor: pointer;
-            a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    li {
+        display: inline-block;
+        list-style: none;
+        margin: 0 .4rem;
+        cursor: pointer;
+        a{
+            color: $color-2;
+            text-decoration: none;
+        }
+    }
+    .contact-links {
+        a {
+            border-radius: 50%;
+            display: grid;
+            width: 3rem;
+            height: 3rem;
+            border: 1.4px solid $color-2;
+            display: grid;
+            place-content: center;
+            transition: all $transition;
+
+            svg {
+                color: $color-2;
+                width: 1.6rem;
+            }
+
+            &:hover {
                 background: $color-2;
-                border-radius: 50%;
-                padding: .5rem;
-                display: grid;
-                place-content: center;
-                img{
-                    width: 1.4rem;
+
+                svg {
+                    color: black;
                 }
             }
         }

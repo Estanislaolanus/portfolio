@@ -1,0 +1,42 @@
+@use "../abstracts" as *;
+@media (768px <= width <= 1023px) {
+        .profile-title {
+            font-size: $subtitle;
+            letter-spacing: .4rem;
+            width: 440px;
+        }
+}
+@media (width <= 768px) {
+    .profile{
+        svg {
+            width: 900px;
+            height: 300px;
+        }
+        .profile-info {
+            flex-wrap: wrap;
+            align-items: center;
+            .profile-text {
+                align-items: center;
+                justify-content: center;
+                .profile-title {
+                    font-size: $subtitle;
+                    letter-spacing: .4rem;
+                    width: 440px;
+                }
+            }
+        }
+    }
+
+    .blob{
+        width: 800px;
+    }
+    .about-container {
+        flex-direction: column;
+        .about-text{
+            width: 100%;
+        }
+    }
+    .tech-stack {
+        width: 80%;
+    }
+}

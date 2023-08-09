@@ -1,4 +1,4 @@
-/* PROJECTS */
+@use "../abstracts" as *;
 .projects {
     margin: 5rem auto 3rem auto;
     width: 60%;
@@ -65,27 +65,14 @@
 
         .project-img {
             width: 330px;
-            height: 270px;
+            height: 300px;
             overflow: hidden;
             border-radius: 15px;
             position: relative;
-            box-shadow: 0 0 5px 0 #242424;
-
-            a {
-                cursor: pointer;
-                color: $color-1;
-                ;
-            }
-
-            img {
-                width: 100%;
-                transition: all $transition ease-in-out;
-
-                &:hover {
-                    width: 100%;
-                    scale: 1.05;
-                }
-            }
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            transition: all $transition;
         }
     }
 }

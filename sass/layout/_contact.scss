@@ -1,0 +1,12 @@
+@use "../abstracts" as *;
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 7rem;
+    h3{
+        font-size: $subtitle;
+        border-bottom: $border-bottom;
+    }
+}

@@ -1,3 +1,4 @@
+@use "../abstracts" as *;
 .underline::after {
     content: '';
     position: absolute;
@@ -10,6 +11,7 @@
     left: 0;
     transform-origin: bottom left;
     transition: transform $transition ease-out;
+    background-color: $color-1;
 }
 .underline:hover::after {
     transform: scaleX(1);
@@ -42,7 +44,7 @@
     letter-spacing: .5rem;
     white-space: nowrap;
     overflow: hidden;
-    width: fit-content;
+    width: 710px;
     animation: typing 2s steps(18), 
     blink .5s step-end 11 alternate;
     box-shadow: none;
