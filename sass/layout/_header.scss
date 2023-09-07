@@ -3,11 +3,10 @@
     --hamburger-height: calc((var(--bar-height) * 3) + var(--hamburger-gap) * 2);
     --x-width: calc(var(--hamburger-height) * 1.41421356237);
     --bar-width: 1.8rem;
-    --bar-height: .23rem;
+    --bar-height: .2rem;
     --hamburger-gap: .3rem;
     --hamburger-margin: 1rem;
     --foreground: #e80e65;
-    --background: #F7F5DD;
     --animation-timing: .3s ease-in-out;
 }
 header {
@@ -80,7 +79,7 @@ header {
                 height: var(--bar-height);
                 background-color: var(--foreground);
                 transition: all var(--animation-timing);
-                transform-origin: right center;
+                transform-origin: right;
                 border-radius: 9999px;
             }
             .bar-active {
@@ -90,7 +89,6 @@ header {
         }
         .hamburger-active {
             --foreground: #e80e65;
-            --background: #F7F5DD;
             &::after {
                 rotate: 45deg;
                 translate: 0 calc(var(--bar-height) / 2);
@@ -104,10 +102,9 @@ header {
         }
     }
     .sidebar {
-        align-self: flex-end;
         transition: all var(--animation-timing);
         padding-top: calc(var(--hamburger-height) + var(--hamburger-margin) + 1rem);
-        background-color: #fff7ed;
+        background-color: $color-2;
         width: 100%;
         min-height: 100vh;
         position: fixed;
@@ -115,30 +112,39 @@ header {
         left: 100%;
         z-index: -1;
         display: flex;
-        justify-content: center;
-        ul {
+        flex-direction: column;
+        align-items: center;
+        .profile-name {
+            color: #000;
+        }
+        .navbar-mobile {
             margin-top: 4rem;
             display: flex;
             flex-direction: column;
-            gap: .5rem;
+            gap: 1.5rem;
             padding: 0;
+            color: #000;
+            .contact-btn {
+                background: $color-1;
+                a {
+                    color: $color-2;
+                }
+            }
             li {
                 list-style: none;
                 text-align: center;
-                .underline-anim {
-    
+                .underline {
                     text-decoration: none;
-                    color: $color-1;
-                    cursor: pointer;
-                    font-size: $text;
-                    &::after {
-                        background: $color-1;
+                    color: #000;
+                    &::after{
+                        background-color: $color-1;
                     }
                 }
+                
             }
         }
     }
-    .sidebar-visible {
+    .sidebar-active {
         translate: -100%;
     }
 }
