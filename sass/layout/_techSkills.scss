@@ -53,7 +53,12 @@
             }
             
         }
-    }    
+    }  
+    @media (width < 768px) {
+        .tech-stack {
+            width: 80%;
+        }
+    }
 }
 
 .tech-logo-container>.tech-img:hover+.tech-logo-info {

@@ -1,12 +1,53 @@
-@use "../abstracts" as *;
+@use "../abstracts"as *;
+
 .contact {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-bottom: 7rem;
-    h3{
+    gap: 2rem;
+
+    h3 {
         font-size: $subtitle;
         border-bottom: $border-bottom;
+    }
+
+    .contact-links {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 1rem;
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            a {
+                border-radius: 50%;
+                display: grid;
+                place-content: center;
+
+                svg {
+                    color: #101011;
+                    width: 1.8rem;
+                    transition: color $transition;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    &:hover {
+                        color: black;
+                    }
+                }
+            }
+
+            .contact-item-link {
+                color: #636262;
+                cursor: pointer;
+                text-decoration: none;
+                
+            }
+        }
     }
 }

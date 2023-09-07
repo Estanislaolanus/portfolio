@@ -13,32 +13,68 @@
         justify-content: center;
         align-items: center;
         gap: 2rem;
+        .profile-description {
+            width: fit-content;
+            align-self: center;
+            display: flex;
+            flex-direction: column;
+            font-size: $text;
+            gap: 1rem;
+            p{
+                width: 60%;
+                font-size: 1.3rem;
+            }
+            .profile-details{
+                svg {
+                    width: 2.3em;
+                }
+            }
+        }
+        .profile-img{
+            width: 15rem;
+            img{
+                border-radius: 50%;
+                width: 100%;
+                border: .2rem solid #2323233b;
+            }
+        }
+        
     }
-    .profile-text {
-        width: fit-content;
-        align-self: center;
-        display: flex;
-        flex-direction: column;
-        font-size: $text;
-        gap: 1rem;
-        p{
-            width: 60%;
+    @media (768px < width < 1023px) {
+        .profile-info .profile-description .profile-title {
+            font-size: $subtitle;
+            letter-spacing: .4rem;
+            width: 440px;
         }
     }
-    .profile-img{
-        width: 15rem;
-        img{
-            border-radius: 50%;
-            width: 100%;
-            border: .2rem solid #2323233b;
+    @media (width < 768px) {
+        .profile-info {
+            flex-wrap: wrap;
+            align-items: center;
+            .profile-description {
+                align-items: center;
+                justify-content: center;
+                .profile-title {
+                    font-size: $subtitle;
+                    letter-spacing: .4rem;
+                    width: 440px;
+                }
+            }
         }
     }
-    .profile-skills {
-        max-width: 95%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 1.3rem;
+    @media (width < 480px) {
+        .profile-info .profile-description  {
+            .profile-title {
+                white-space: normal;
+                width: 90%;
+                animation: none;
+                text-align: center;
+            }
+            p {
+                font-size: 1rem;
+            }
+        }
     }
+    
+    
 }

@@ -1,26 +1,32 @@
-@use "../abstracts" as *;
-.underline::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    border-radius: 15px;
-    transform: scaleX(0);
-    margin-bottom: -4px;
-    height: 2.4px;
-    bottom: 0;
-    left: 0;
-    transform-origin: bottom left;
-    transition: transform $transition ease-out;
-    background-color: $color-1;
-}
-.underline:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
+@use "../abstracts"as *;
+
+.underline {
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        border-radius: 15px;
+        transform: scaleX(0);
+        margin-bottom: -4px;
+        height: 2.4px;
+        bottom: 0;
+        left: 0;
+        transform-origin: bottom left;
+        transition: transform $transition ease-out;
+        background-color: $color-1;
+    }
+    &:hover::after, &:focus::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
 }
 
-.blob{
+.blob {
     position: absolute;
     z-index: -1;
+    width: 900px;
 }
 
 .hidden {
@@ -29,10 +35,12 @@
     transform: translateX(-100%);
     transition: all 1.2s ease-in-out;
 }
-.reverse-animation{
+
+.reverse-animation {
     transform: translateX(100%);
-} 
-.show{
+}
+
+.show {
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);
@@ -45,8 +53,8 @@
     white-space: nowrap;
     overflow: hidden;
     width: 710px;
-    animation: typing 2s steps(18), 
-    blink .5s step-end 11 alternate;
+    animation: typing 2s steps(18),
+        blink .5s step-end 11 alternate;
     box-shadow: none;
 }
 
@@ -56,11 +64,20 @@
         box-shadow: .25rem 0 0 #000;
     }
 }
+
 @keyframes typing {
     from {
         width: 0%;
-    } 
+    }
+
     to {
         width: 100%;
+    }
+}
+
+@media (width < 768px) {
+
+    .blob {
+        width: 800px;
     }
 }

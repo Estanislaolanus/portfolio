@@ -15,7 +15,7 @@
     <header>
         <nav id="navbar" class="navbar bg-1">
             <div class="profile-name">lao.dev</div>
-            <ul>
+            <ul class="nav-desktop">
                 <li>
                     <a class="underline" href="#home">Home</a>
                 </li>
@@ -26,13 +26,35 @@
                     <a class="underline" href="#projects">Projects</a>
                 </li>
                 <li class="contact-btn">
-                    <a href="#footer">Contact</a>
+                    <a href="#contact">Contact</a>
                 </li>
             </ul>
+            <div class="nav-mobile">
+                <div class="hamburger">
+                    <div class="bar"></div>
+                </div>
+                <aside class="sidebar">
+                    <nav class='navbar-mobile'>
+                        <div>
+                        </div>
+                        <ul>
+                            <li>
+                            </li>
+                            <li>
+                            </li>
+                            <li>
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                    </nav>
+                </aside>
+            </div>
+            </div>
         </nav>
     </header>
     <main class="profile" id="home">
-        <svg id="visual" class="blob" viewBox="0 60 1500 700" width="1200" height="600" xmlns="http://www.w3.org/2000/svg"
+        <svg id="visual" class="blob" viewBox="0 60 1000 600" xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
             <g transform="translate(464.42213896418014 306.9384505887057)">
                 <path class="blob1"
@@ -46,12 +68,13 @@
             </g>
         </svg>
         <div class="profile-info">
-            <div class="profile-text">
+            <div class="profile-description">
                 <h1 class="profile-title">
                     Full <span class="special-color">Stack</span> Developer
                 </h1>
                 <p>
-                    Hi, my name is Estanislao. I'm a hardworking junior software developer from Cordoba, Argentina.
+                    Hi, my name is Estanislao Lanús. I'm a hardworking junior software developer from Cordoba,
+                    Argentina.
                 </p>
             </div>
             <div class="profile-img">
@@ -59,17 +82,28 @@
             </div>
         </div>
     </main>
-    
+
     <section class="about" id="about">
-        <svg id="visual" class="blob" viewBox="0 0 1000 600" width="900" height="700" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-            <g transform="translate(419.0833286491628 326.6600410300631)"><path class="blob1" d="M109.5 -198.3C145.3 -168.9 180 -146.5 209.9 -114.6C239.8 -82.7 264.9 -41.3 250.8 -8.2C236.6 25 183.3 50 159.7 92.9C136.1 135.7 142.3 196.5 120.7 212.3C99 228.1 49.5 199.1 7.7 185.8C-34.2 172.5 -68.3 175 -96.5 162.9C-124.6 150.9 -146.7 124.2 -164.7 94.6C-182.6 65 -196.3 32.5 -192.3 2.3C-188.2 -27.8 -166.4 -55.7 -153.1 -93.2C-139.8 -130.7 -134.9 -177.9 -110.8 -214C-86.7 -250.1 -43.3 -275.1 -3.3 -269.4C36.8 -263.8 73.7 -227.6 109.5 -198.3" fill="#ef337e"></path></g> 
-            <g style="visibility: hidden;" transform="translate(457.59606308480465 309.78350675217604)"><path class="blob2" d="M105.3 -204.1C127 -169.9 128.4 -122.5 146.7 -86.2C164.9 -50 200 -25 219.6 11.3C239.2 47.7 243.5 95.3 220.4 123.2C197.3 151 146.9 159.1 105.6 178.8C64.3 198.4 32.2 229.7 -1.2 231.7C-34.5 233.8 -69 206.5 -112.3 188C-155.6 169.5 -207.7 159.8 -232.6 129.9C-257.5 100 -255.3 50 -238.8 9.5C-222.4 -31 -191.7 -62 -164.5 -87.8C-137.2 -113.7 -113.4 -134.3 -86.5 -165.5C-59.7 -196.7 -29.8 -238.3 6 -248.7C41.8 -259.1 83.7 -238.2 105.3 -204.1" fill="#ef337e"></path></g>
+        <svg id="visual" class="blob" viewBox="0 0 1000 600" width="900" height="700" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+            <g transform="translate(419.0833286491628 326.6600410300631)">
+                <path class="blob1"
+                    d="M109.5 -198.3C145.3 -168.9 180 -146.5 209.9 -114.6C239.8 -82.7 264.9 -41.3 250.8 -8.2C236.6 25 183.3 50 159.7 92.9C136.1 135.7 142.3 196.5 120.7 212.3C99 228.1 49.5 199.1 7.7 185.8C-34.2 172.5 -68.3 175 -96.5 162.9C-124.6 150.9 -146.7 124.2 -164.7 94.6C-182.6 65 -196.3 32.5 -192.3 2.3C-188.2 -27.8 -166.4 -55.7 -153.1 -93.2C-139.8 -130.7 -134.9 -177.9 -110.8 -214C-86.7 -250.1 -43.3 -275.1 -3.3 -269.4C36.8 -263.8 73.7 -227.6 109.5 -198.3"
+                    fill="#ef337e"></path>
+            </g>
+            <g style="visibility: hidden;" transform="translate(457.59606308480465 309.78350675217604)">
+                <path class="blob2"
+                    d="M105.3 -204.1C127 -169.9 128.4 -122.5 146.7 -86.2C164.9 -50 200 -25 219.6 11.3C239.2 47.7 243.5 95.3 220.4 123.2C197.3 151 146.9 159.1 105.6 178.8C64.3 198.4 32.2 229.7 -1.2 231.7C-34.5 233.8 -69 206.5 -112.3 188C-155.6 169.5 -207.7 159.8 -232.6 129.9C-257.5 100 -255.3 50 -238.8 9.5C-222.4 -31 -191.7 -62 -164.5 -87.8C-137.2 -113.7 -113.4 -134.3 -86.5 -165.5C-59.7 -196.7 -29.8 -238.3 6 -248.7C41.8 -259.1 83.7 -238.2 105.3 -204.1"
+                    fill="#ef337e"></path>
+            </g>
         </svg>
-        <h3>About Me</h3>
         <div class="about-container">
             <img src="./assets/images/profile/about-me.jpg" alt="">
-            <div class="about-text">
-                I'm a passionate software developer who loves problem solving and learning new technologies
+            <div class="about-description">
+                <h3>About Me</h3>
+                <p>
+                    I'm a passionate software developer who loves problem solving and learning new technologies
+                </p>
             </div>
         </div>
     </section>
@@ -85,6 +119,10 @@
             <div class="tech-logo-container">
                 <div class="tech-img"><img src="./assets/images/techLogos/css-logo.svg.png" alt=""></div>
                 <div class="tech-logo-info">Css</div>
+            </div>
+            <div class="tech-logo-container">
+                <div class="tech-img"><img src="./assets/images/techLogos/sass-logo.png" alt=""></div>
+                <div class="tech-logo-info">Sass</div>
             </div>
             <div class="tech-logo-container">
                 <div class="tech-img"><img src="./assets/images/techLogos/javascript-logo.png" alt=""></div>
@@ -129,11 +167,12 @@
                     <div><img src="./assets/images/techLogos/mongodb-logo.png" alt=""></div>
                     <div><img src="./assets/images/techLogos/express-logo.png" alt=""></div>
                     <div><img src="./assets/images/techLogos/react-logo.png" alt=""></div>
+                    <div><img src="./assets/images/techLogos/typescript-logo.png" alt=""></div>
                     <div><img src="./assets/images/techLogos/node-js-logo.png" alt=""></div>
                 </div>
                 <div class="project-info-links">
                     <a href="https://github.com/lao7272/budget-app/tree/main" target="_blank">
-                        Code <img src="./assets/images/techLogos/github-logo.png" alt="">
+                        Code <img src="./assets/images/contactLogos/github-logo.png" alt="">
                     </a>
                     <a href="https://my-budget-management-app.netlify.app/" target="_blank">
                         Visit demo! &#128279;
@@ -141,7 +180,8 @@
                 </div>
             </div>
             <a href="https://my-budget-management-app.netlify.app/" target="_blank">
-                <div style="background-image: url(./assets/images/websites/budget-app-3.png);" class="project-img"></div>
+                <div style="background-image: url(./assets/images/websites/budget-app-3.png);" class="project-img">
+                </div>
             </a>
         </div>
         <div class="project-container reverse reverse-animation hidden">
@@ -158,7 +198,7 @@
                 </div>
                 <div class="project-info-links">
                     <a href="https://github.com/lao7272/chess-app" target="_blank">
-                        Code <img src="./assets/images/techLogos/github-logo.png" alt="">
+                        Code <img src="./assets/images/contactLogos/github-logo.png" alt="">
                     </a>
                     <a href="https://my-budget-management-app.netlify.app/" target="_blank">
                         Visit demo! &#128279;
@@ -169,39 +209,108 @@
                 <div class="project-img" style="background-image: url(./assets/images/websites/chess4.png);"></div>
             </a>
         </div>
-    </section>
-    <section class="contact">
-        <h3>Get in touch</h3>
-        <div class="">
-            
+        <div class="project-container hidden">
+            <div class="project-info">
+                <h4>Sentir</h4>
+                <p>
+                    A music event frontend web page for a client.
+                    This page was built using modern frontend technologies and was customized to meet the client's
+                    specific requirements.
+                </p>
+                <div class="project-techs">
+                    <div><img src="./assets/images/techLogos/react-logo.png" alt=""></div>
+                    <div><img src="./assets/images/techLogos/typescript-logo.png" alt=""></div>
+                    <div><img src="./assets/images/techLogos/sass-logo.png" alt=""></div>
+                </div>
+                <div class="project-info-links">
+                    <a href="https://github.com/lao7272/budget-app/tree/main" target="_blank">
+                        Code <img src="./assets/images/contactLogos/github-logo.png" alt="">
+                    </a>
+                    <a href="https://celebrated-tapioca-da6dfc.netlify.app/" target="_blank">
+                        Visit demo! &#128279;
+                    </a>
+                </div>
+            </div>
+            <a href="https://celebrated-tapioca-da6dfc.netlify.app/" target="_blank">
+                <div style="background-image: url(./assets/images/websites/sentir.png);" class="project-img"></div>
+            </a>
         </div>
     </section>
-    <footer id="footer" class="footer">
-    
-        <ul class="contact-links">
-            <li>
+    <section id="contact" class="contact">
+        <h3>Get in touch</h3>
+        <div class="contact-links">
+            <div class="contact-item">
+                <a href="mailto: estanislaolanus@gmail.com" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="email">
+                        <path fill="currentColor"
+                            d="M53.42 53.32H10.58a8.51 8.51 0 0 1-8.5-8.5V19.18a8.51 8.51 0 0 1 8.5-8.5h42.84a8.51 8.51 0 0 1 8.5 8.5v25.64a8.51 8.51 0 0 1-8.5 8.5ZM10.58 13.68a5.5 5.5 0 0 0-5.5 5.5v25.64a5.5 5.5 0 0 0 5.5 5.5h42.84a5.5 5.5 0 0 0 5.5-5.5V19.18a5.5 5.5 0 0 0-5.5-5.5Z">
+                        </path>
+                        <path fill="currentColor"
+                            d="M32 38.08a8.51 8.51 0 0 1-5.13-1.71L3.52 18.71a1.5 1.5 0 1 1 1.81-2.39L28.68 34a5.55 5.55 0 0 0 6.64 0l23.35-17.68a1.5 1.5 0 1 1 1.81 2.39L37.13 36.37A8.51 8.51 0 0 1 32 38.08Z">
+                        </path>
+                        <path fill="currentColor"
+                            d="M4.17 49.14a1.5 1.5 0 0 1-1-2.62l18.4-16.41a1.5 1.5 0 0 1 2 2.24L5.17 48.76a1.46 1.46 0 0 1-1 .38zm55.66 0a1.46 1.46 0 0 1-1-.38l-18.4-16.41a1.5 1.5 0 1 1 2-2.24l18.39 16.41a1.5 1.5 0 0 1-1 2.62z">
+                        </path>
+                    </svg>
+                </a>
+                <a class="contact-item-link" href="mailto: estanislaolanus@gmail.com"
+                    target="_blank">estanislaolanus@gmail.com</a>
+            </div>
+            <div class="contact-item">
                 <a href="https://ar.linkedin.com/in/estanislao-lanus" target="_blank">
-                    <svg class="svg-inline--fa fa-linkedin-in fa-fw" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin-in" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
-                        <path fill="currentColor" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path>
+                    <svg class="svg-inline--fa fa-linkedin-in fa-fw" aria-hidden="true" focusable="false"
+                        data-prefix="fab" data-icon="linkedin-in" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512" data-fa-i2svg="">
+                        <path fill="#0a66c2"
+                            d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
+                        </path>
                     </svg>
-
                 </a>
-            </li>
-            <li>
+                <a class="contact-item-link" href="https://ar.linkedin.com/in/estanislao-lanus"
+                    target="_blank">https://ar.linkedin.com/in/estanislao-lanus</a>
+            </div>
+            <div class="contact-item">
+
                 <a href="https://github.com/lao7272" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="github">
-                        <path fill="currentColor" d="M27.106 0s-2.101 0-4.235 3.2c-1.056-1.057-4.267-1.067-5.331-1.067-1.068 0-4.277.01-5.334 1.067C10.072 0 7.976 0 7.976 0c-1.141 2.864-.248 4.807-.033 5.333C6.877 6.4 5.806 7.467 5.806 12.8s3.878 8.008 8.538 8.533c-.599.521-1.067 2.133-1.067 3.2-1.197.533-4.528 1.045-6.4-2.133 0 0-1.067-2.133-3.2-2.133 0 0-2.133-.201 0 1.067 0 0 1.067 1.067 2.133 3.2 0 0 1.629 4.456 7.467 3.2.012 1.735 0 4.267 0 4.267h8.528v-7.467c0-.844-.466-2.68-1.067-3.2 4.66-.525 8.533-3.2 8.533-8.533 0-5.333-1.067-6.4-2.133-7.467.217-.527 1.108-2.47-.032-5.334z"></path>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+                        <path
+                            d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z" />
                     </svg>
                 </a>
-            </li>
-            <li>
-                <a href="mailto: estanislaolanus@gmail.com">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="email"><path fill="currentColor" d="M53.42 53.32H10.58a8.51 8.51 0 0 1-8.5-8.5V19.18a8.51 8.51 0 0 1 8.5-8.5h42.84a8.51 8.51 0 0 1 8.5 8.5v25.64a8.51 8.51 0 0 1-8.5 8.5ZM10.58 13.68a5.5 5.5 0 0 0-5.5 5.5v25.64a5.5 5.5 0 0 0 5.5 5.5h42.84a5.5 5.5 0 0 0 5.5-5.5V19.18a5.5 5.5 0 0 0-5.5-5.5Z"></path><path fill="currentColor" d="M32 38.08a8.51 8.51 0 0 1-5.13-1.71L3.52 18.71a1.5 1.5 0 1 1 1.81-2.39L28.68 34a5.55 5.55 0 0 0 6.64 0l23.35-17.68a1.5 1.5 0 1 1 1.81 2.39L37.13 36.37A8.51 8.51 0 0 1 32 38.08Z"></path><path fill="currentColor" d="M4.17 49.14a1.5 1.5 0 0 1-1-2.62l18.4-16.41a1.5 1.5 0 0 1 2 2.24L5.17 48.76a1.46 1.46 0 0 1-1 .38zm55.66 0a1.46 1.46 0 0 1-1-.38l-18.4-16.41a1.5 1.5 0 1 1 2-2.24l18.39 16.41a1.5 1.5 0 0 1-1 2.62z"></path></svg>
+                <a class="contact-item-link" href="https://github.com/lao7272"
+                    target="_blank">https://github.com/lao7272</a>
+            </div>
+            <div class="contact-item">
+                <a href='https://api.whatsapp.com/send?phone=5493548401102' target='_blank'>
+                    <svg version="1.1" id="Layer_1" xmlns="https://www.w3.org/2000/svg" viewBox="0 0 308 308"
+                        fill="#2dd46c">
+                        <g id="XMLID_468_">
+                            <path id="XMLID_469_" d="M227.904,176.981c-0.6-0.288-23.054-11.345-27.044-12.781c-1.629-0.585-3.374-1.156-5.23-1.156
+                c-3.032,0-5.579,1.511-7.563,4.479c-2.243,3.334-9.033,11.271-11.131,13.642c-0.274,0.313-0.648,0.687-0.872,0.687
+                c-0.201,0-3.676-1.431-4.728-1.888c-24.087-10.463-42.37-35.624-44.877-39.867c-0.358-0.61-0.373-0.887-0.376-0.887
+                c0.088-0.323,0.898-1.135,1.316-1.554c1.223-1.21,2.548-2.805,3.83-4.348c0.607-0.731,1.215-1.463,1.812-2.153
+                c1.86-2.164,2.688-3.844,3.648-5.79l0.503-1.011c2.344-4.657,0.342-8.587-0.305-9.856c-0.531-1.062-10.012-23.944-11.02-26.348
+                c-2.424-5.801-5.627-8.502-10.078-8.502c-0.413,0,0,0-1.732,0.073c-2.109,0.089-13.594,1.601-18.672,4.802
+                c-5.385,3.395-14.495,14.217-14.495,33.249c0,17.129,10.87,33.302,15.537,39.453c0.116,0.155,0.329,0.47,0.638,0.922
+                c17.873,26.102,40.154,45.446,62.741,54.469c21.745,8.686,32.042,9.69,37.896,9.69c0.001,0,0.001,0,0.001,0
+                c2.46,0,4.429-0.193,6.166-0.364l1.102-0.105c7.512-0.666,24.02-9.22,27.775-19.655c2.958-8.219,3.738-17.199,1.77-20.458
+                C233.168,179.508,230.845,178.393,227.904,176.981z" />
+                            <path id="XMLID_470_" d="M156.734,0C73.318,0,5.454,67.354,5.454,150.143c0,26.777,7.166,52.988,20.741,75.928L0.212,302.716
+                c-0.484,1.429-0.124,3.009,0.933,4.085C1.908,307.58,2.943,308,4,308c0.405,0,0.813-0.061,1.211-0.188l79.92-25.396
+                c21.87,11.685,46.588,17.853,71.604,17.853C240.143,300.27,308,232.923,308,150.143C308,67.354,240.143,0,156.734,0z
+                M156.734,268.994c-23.539,0-46.338-6.797-65.936-19.657c-0.659-0.433-1.424-0.655-2.194-0.655c-0.407,0-0.815,0.062-1.212,0.188
+                l-40.035,12.726l12.924-38.129c0.418-1.234,0.209-2.595-0.561-3.647c-14.924-20.392-22.813-44.485-22.813-69.677
+                c0-65.543,53.754-118.867,119.826-118.867c66.064,0,119.812,53.324,119.812,118.867
+                C276.546,215.678,222.799,268.994,156.734,268.994z" />
+                        </g>
+                    </svg>
                 </a>
-            </li>
-        </ul>
+                <a class="contact-item-link" href='https://api.whatsapp.com/send?phone=5493548401102'
+                    target='_blank'>+54 9 3548 40-1102</a>
+            </div>
+        </div>
+    </section>
 
-    </footer>
 </body>
 
 </html>
