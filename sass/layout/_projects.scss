@@ -7,7 +7,11 @@
     flex-direction: column;
     gap: 7rem;
     margin-bottom: 7rem;
-
+    h3 {
+        font-size: $subtitle;
+        text-align: center;
+        
+    }
     .project-container {
         display: flex;
         justify-content: center;
@@ -23,16 +27,34 @@
             gap: 20px;
             font-size: $text;
             text-align: justify;
-            p{
-                color: #636262;
-            }
+            
             h4 {
                 font-size: $heading-1;
                 width: fit-content;
                 border-bottom: 2px solid $color-1;
                 align-self: flex-start;
             }
-
+            p{
+                color: #636262;
+            }
+            .user-account{
+                .data-section {
+                    display: flex;
+                    align-items: center;
+                    gap: .7rem;
+                    .copy {
+                        background: none;
+                        outline: none;
+                        border: none;
+                        cursor: pointer;
+                        height: 1.2rem;
+                        width: 1.2rem;
+                        img {
+                            width: 100%
+                        }
+                    }
+                }
+            }
             .project-techs {
                 display: flex;
                 align-items: center;

@@ -82,7 +82,7 @@ body {
 }
 @media (width < 768px) {
   .blob {
-    width: 800px;
+    width: 100%;
   }
 }
 :root {
@@ -363,7 +363,6 @@ header .sidebar-active {
 .profile-skills h3 {
   width: fit-content;
   font-size: 2.369rem;
-  border-bottom: 2.4px solid #e80e65;
 }
 .profile-skills .tech-stack {
   display: flex;
@@ -434,7 +433,7 @@ header .sidebar-active {
   gap: 2rem;
   overflow: hidden;
 }
-.about svg {
+.about .blob {
   z-index: 1;
   width: 800px;
 }
@@ -454,6 +453,7 @@ header .sidebar-active {
   text-align: center;
   font-size: 2.369rem;
   font-weight: 800;
+  margin-bottom: 1rem;
 }
 .about .about-container .about-description p {
   width: 300px;
@@ -463,6 +463,9 @@ header .sidebar-active {
   border-radius: 1rem;
 }
 @media (width < 768px) {
+  .about .blob {
+    display: none;
+  }
   .about .about-container {
     flex-direction: column-reverse;
   }
@@ -479,6 +482,10 @@ header .sidebar-active {
   flex-direction: column;
   gap: 7rem;
   margin-bottom: 7rem;
+}
+.projects h3 {
+  font-size: 2.369rem;
+  text-align: center;
 }
 .projects .project-container {
   display: flex;
@@ -497,14 +504,30 @@ header .sidebar-active {
   font-size: 1rem;
   text-align: justify;
 }
-.projects .project-container .project-info p {
-  color: #636262;
-}
 .projects .project-container .project-info h4 {
   font-size: 1.777rem;
   width: fit-content;
   border-bottom: 2px solid #e80e65;
   align-self: flex-start;
+}
+.projects .project-container .project-info p {
+  color: #636262;
+}
+.projects .project-container .project-info .user-account .data-section {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+.projects .project-container .project-info .user-account .data-section .copy {
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  height: 1.2rem;
+  width: 1.2rem;
+}
+.projects .project-container .project-info .user-account .data-section .copy img {
+  width: 100%;
 }
 .projects .project-container .project-info .project-techs {
   display: flex;

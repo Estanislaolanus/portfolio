@@ -3,6 +3,8 @@ const about = document.querySelector(".about");
 const hamburgerBtn = document.querySelector("#hamburger");
 const sidebar = document.querySelector("#sidebar");
 const navbarMobile = document.querySelector("#navbar-mobile");
+const copy = document.querySelectorAll(".copy");
+const text = document.querySelectorAll(".user-data");
 // Blob animation
 const tween = KUTE.allFromTo(
     '.blob1',
@@ -55,3 +57,11 @@ for(const child of navChildren) {
         sidebar.classList.remove("sidebar-active");
     })
 }
+// Copy to clipboard
+copy.forEach((element, i) => element.addEventListener("click", async () => { 
+    try {
+        await navigator.clipboard.writeText(text[i].innerHTML);
+    } catch (err) {
+        console.error('Failed to copy: ', err);
+    }
+}))
