@@ -19,10 +19,6 @@ body {
   color: #e80e65;
 }
 
-.hidden {
-  display: none;
-}
-
 .underline {
   position: relative;
 }
@@ -53,19 +49,11 @@ body {
 
 .hidden {
   opacity: 0;
-  filter: blur(5px);
-  transform: translateX(-100%);
   transition: all 1.2s ease-in-out;
-}
-
-.reverse-animation {
-  transform: translateX(100%);
 }
 
 .show {
   opacity: 1;
-  filter: blur(0);
-  transform: translateX(0);
 }
 
 .profile-title {
@@ -554,10 +542,6 @@ header .sidebar-active {
   background-position: center;
   transition: all 0.3s;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-}
-
-.reverse {
-  flex-direction: row-reverse;
 }
 
 .contact {
