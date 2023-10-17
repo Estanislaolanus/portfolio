@@ -8,14 +8,13 @@
     h3 {
         width: fit-content;
         font-size: $subtitle;
-        // border-bottom: $border-bottom;
     }
 
     .tech-stack {
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         gap: 1rem;
-        flex-wrap: wrap;
         .tech-logo-container {
             display: flex;
             flex-direction: column;

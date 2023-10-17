@@ -34,7 +34,46 @@
     transition: all 1.2s ease-in-out;
 }
 
+.tech-logo-container {
+    opacity: 0;
+    transform: translateX(-100vw);
+    filter: blur(5px);
+    transition: all 1s ease-in-out;
+}
+.tech-logo-container:nth-child(1) {
+    transition-delay: 200ms;
+}
+.tech-logo-container:nth-child(2) {
+    transition-delay: 400ms;
+}
+.tech-logo-container:nth-child(3) {
+    transition-delay: 600ms;
+}
+.tech-logo-container:nth-child(4) {
+    transition-delay: 800ms;
+}
+.tech-logo-container:nth-child(5) {
+    transition-delay: 1000ms;
+}
+.tech-logo-container:nth-child(6) {
+    transition-delay: 1200ms;
+}
+.tech-logo-container:nth-child(7) {
+    transition-delay: 1400ms;
+}
+.tech-logo-container:nth-child(8) {
+    transition-delay: 1600ms;
+}
+.tech-logo-container:nth-child(9) {
+    transition-delay: 1800ms;
+}
+.tech-logo-container:nth-child(10) {
+    transition-delay: 2000ms;
+}
+
 .show {
+    transform: translate(0, 0);
+    filter: blur(0);
     opacity: 1;
 }
 
