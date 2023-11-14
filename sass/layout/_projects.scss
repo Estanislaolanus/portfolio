@@ -19,6 +19,8 @@
         flex-wrap: wrap;
         gap: 2rem;
         .project-info {
+            transform: translateX(-100px);
+            transition: transform 1.2s ease-in-out;
             width: 300px;
             align-self: center;
             display: flex;
@@ -87,6 +89,8 @@
         }
 
         .project-img {
+            transform: translateX(100px);
+            transition: transform 1.2s ease-in-out;
             width: 330px;
             height: 300px;
             overflow: hidden;
@@ -97,6 +101,25 @@
             background-position: center;
             transition: all $transition;
             box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        }
+    }
+    .project-container-alt {
+        flex-direction: row-reverse;
+        .project-info { 
+            transform: translateX(100px);
+        }
+        .project-img {
+            transform: translateX(-100px);
+        }
+    }
+    .show {
+        .project-info { 
+            transform: translateX(0);
+            transition: transform 1.2s ease-in-out;
+        }
+        .project-img {
+            transform: translateX(0);
+            transition: transform 1.2s ease-in-out;
         }
     }
 }

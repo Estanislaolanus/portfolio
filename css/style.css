@@ -543,6 +543,8 @@ header .sidebar-active {
   gap: 2rem;
 }
 .projects .project-container .project-info {
+  transform: translateX(-100px);
+  transition: transform 1.2s ease-in-out;
   width: 300px;
   align-self: center;
   display: flex;
@@ -603,6 +605,8 @@ header .sidebar-active {
   width: 1.3rem;
 }
 .projects .project-container .project-img {
+  transform: translateX(100px);
+  transition: transform 1.2s ease-in-out;
   width: 330px;
   height: 300px;
   overflow: hidden;
@@ -613,6 +617,23 @@ header .sidebar-active {
   background-position: center;
   transition: all 0.3s;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.projects .project-container-alt {
+  flex-direction: row-reverse;
+}
+.projects .project-container-alt .project-info {
+  transform: translateX(100px);
+}
+.projects .project-container-alt .project-img {
+  transform: translateX(-100px);
+}
+.projects .show .project-info {
+  transform: translateX(0);
+  transition: transform 1.2s ease-in-out;
+}
+.projects .show .project-img {
+  transform: translateX(0);
+  transition: transform 1.2s ease-in-out;
 }
 
 .contact {

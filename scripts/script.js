@@ -6,6 +6,7 @@ const sidebar = document.querySelector("#sidebar");
 const navbarMobile = document.querySelector("#navbar-mobile");
 const copy = document.querySelectorAll(".copy");
 const text = document.querySelectorAll(".user-data");
+const alert = document.querySelectorAll(".clipboard-alert");
 // Blob animation
 const tween = KUTE.allFromTo(
     '.blob1',
@@ -68,6 +69,27 @@ for (const child of navChildren) {
 copy.forEach((element, i) => element.addEventListener("click", async () => {
     try {
         await navigator.clipboard.writeText(text[i].innerHTML);
+        const Toast = Swal.mixin({
+            toast: true,
+            position: 'center',
+            iconColor: 'white',
+            showConfirmButton: false,
+            timer: 1000,
+        })
+        Toast.fire({
+            title: 'Copy to clipboard',
+            width: 'fit-content',
+            showClass: {
+                popup: `
+                animate__animated
+            `,
+            },
+            hideClass: {
+                popup: `
+                animate__animated
+            `,
+            },
+        })
     } catch (err) {
         console.error('Failed to copy: ', err);
     }
