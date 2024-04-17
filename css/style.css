@@ -12,6 +12,7 @@ html {
 
 body {
   background: #F7F5DD;
+  overflow-x: hidden;
 }
 
 .special-color {
@@ -559,6 +560,7 @@ header .sidebar-active {
   width: fit-content;
   border-bottom: 2px solid #e80e65;
   align-self: flex-start;
+  margin: 0 auto;
 }
 .projects .project-container .project-info p {
   color: #636262;

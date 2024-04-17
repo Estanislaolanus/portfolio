@@ -1,4 +1,5 @@
-@use "../abstracts" as *;
+@use "../abstracts"as *;
+
 .projects {
     margin: 5rem auto 3rem auto;
     width: 60%;
@@ -7,17 +8,19 @@
     flex-direction: column;
     gap: 7rem;
     margin-bottom: 7rem;
+
     h3 {
         font-size: $subtitle;
         text-align: center;
-        
     }
+
     .project-container {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
         gap: 2rem;
+
         .project-info {
             transform: translateX(-100px);
             transition: transform 1.2s ease-in-out;
@@ -29,21 +32,25 @@
             gap: 20px;
             font-size: $text;
             text-align: justify;
-            
+
             h4 {
                 font-size: $heading-1;
                 width: fit-content;
                 border-bottom: 2px solid $color-1;
                 align-self: flex-start;
+                margin: 0 auto;
             }
-            p{
+
+            p {
                 color: #636262;
             }
-            .user-account{
+
+            .user-account {
                 .data-section {
                     display: flex;
                     align-items: center;
                     gap: .7rem;
+
                     .copy {
                         background: none;
                         outline: none;
@@ -51,12 +58,14 @@
                         cursor: pointer;
                         height: 1.2rem;
                         width: 1.2rem;
+
                         img {
                             width: 100%
                         }
                     }
                 }
             }
+
             .project-techs {
                 display: flex;
                 align-items: center;
@@ -103,20 +112,25 @@
             box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
         }
     }
+
     .project-container-alt {
         flex-direction: row-reverse;
-        .project-info { 
+
+        .project-info {
             transform: translateX(100px);
         }
+
         .project-img {
             transform: translateX(-100px);
         }
     }
+
     .show {
-        .project-info { 
+        .project-info {
             transform: translateX(0);
             transition: transform 1.2s ease-in-out;
         }
+
         .project-img {
             transform: translateX(0);
             transition: transform 1.2s ease-in-out;
